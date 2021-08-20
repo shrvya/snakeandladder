@@ -35,6 +35,12 @@ public class snakeandladder {
         	}
         	System.out.println("snake!!");
         }
+        //usecase5
+        if(position>100)
+        {
+        	position-=dicevalue;
+        	System.out.println("stays in same position "+position);
+        }
         
         System.out.println("current postion is  "+position);
 		}
