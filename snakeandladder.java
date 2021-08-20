@@ -6,12 +6,12 @@ public class snakeandladder {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//This is use case1
-		int position=0;
+		int position=0,count=0;
 		System.out.println("Welcome to snake and Ladder!!!");
 		while(position!=100) {
 		//usecase2
         int dicevalue=(int)( Math.random() * (6)) + 1; 
-       
+        count++;
         System.out.println("dice value is "+dicevalue);
         //usecas3
         int option=(int)( Math.random() * (3)) + 1; 
@@ -44,6 +44,7 @@ public class snakeandladder {
         
         System.out.println("current postion is  "+position);
 		}
+		System.out.println("count of dice role is  "+count);
 	}
 	
 	
