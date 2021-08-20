@@ -8,7 +8,7 @@ public class snakeandladder {
 		//This is use case1
 		int position=0;
 		System.out.println("Welcome to snake and Ladder!!!");
-		
+		while(position!=100) {
 		//usecase2
         int dicevalue=(int)( Math.random() * (6)) + 1; 
        
@@ -21,8 +21,11 @@ public class snakeandladder {
         }
         else if(option==2)
         {
+        	
         	position+=dicevalue;
         	System.out.println("Ladder!!");
+        	
+    		   
         }
         else {
         	position-=dicevalue;
@@ -33,10 +36,10 @@ public class snakeandladder {
         	System.out.println("snake!!");
         }
         
-       
         System.out.println("current postion is  "+position);
-    
+		}
 	}
+	
 	
 
 }
